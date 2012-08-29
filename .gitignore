@@ -1,1 +1,16 @@
 .DS_Store
+*.aux
+
+*.log
+
+*.nav
+
+*.out
+
+slides/folien.pdf
+
+*.snm
+
+*.gz
+
+*.toc
