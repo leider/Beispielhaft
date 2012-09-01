@@ -2,7 +2,7 @@
 \begin{frame}{Überblick über die Präsentation}
 
 \begin{itemize}
-\onslide<1,4>
+\onslide<1>
 
 	\item Motivation
 	\begin{itemize}
@@ -10,14 +10,14 @@
 		\item Welche Probleme werden adressiert?
 	\end{itemize}
 
-\onslide<2,4>
+\onslide<2>
 
 	\item Ziel
 	\begin{itemize}
 		\item Was erhalten wir, wenn wir das richtig anwenden?
 	\end{itemize}
 
-\onslide<3,4>
+\onslide<3>
 
 	\item Weg
 	\begin{itemize}
@@ -33,7 +33,7 @@
 
 \begin{itemize}
 
-\onslide<1,4>
+\onslide<1>
 	
 	\item Auftraggeber:
 
@@ -42,7 +42,7 @@
 		\item \glqq Ich will das Ganze möglichst preiswert.\grqq
 	\end{itemize}
 	
-\onslide<2,4>
+\onslide<2>
 	
 	\item Entwickler:
 	
@@ -51,7 +51,7 @@
 		\item \glqq Wann bin ich fertig?\grqq
 	\end{itemize}
 	
-\onslide<3,4>
+\onslide<3>
 	
 	\item Nach der Lieferung:
 	
@@ -187,8 +187,8 @@ $\Rightarrow$ Specification Workshops
 
 \begin{enumerate}
 	\item Der Auftraggeber beschreibt sein zu lösendes Problem
-	\item Die Teilnehmer befragen ihn, um Klarheit zu erhalten
-	\item Die Teilnehmer erarbeiten Beispiele
+	\item Die anderen Teilnehmer befragen ihn, um Klarheit zu erhalten
+	\item Alle erarbeiten gemeinsam Beispiele
 	\item Die Beispiele werden zusammengeführt und auf das Wesentliche reduziert
 	\item Aus den Beispielen wird eine Spezifikation abgeleitet
 \end{enumerate}
@@ -210,9 +210,9 @@ $\Rightarrow$ Specification Workshops
 		\item Die Teilnehmer sollen miteinander das Ergebnis erarbeiten
 	\end{itemize}
 	
-	\item Der Workshop ist keine Design Session
+	\item Der Workshop ist keine Software Design Session
 	\begin{itemize}
-		\item Es geht darum, fachliche Klarheit zu erzielen. Design ist Sache der Entwickler
+		\item Es geht darum, fachliche Klarheit zu erzielen. Technisches Design ist Sache der Entwickler
 	\end{itemize}
 	
 \end{itemize}
@@ -239,7 +239,7 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 	
 	\item Namensgebung
 	\begin{itemize}
-		\item Alle wesentlichen Konzepte brauchen klare fachlich verständliche Namen
+		\item Alle wesentlichen Konzepte brauchen klare, fachlich verständliche Namen
 		\item Jeder soll unter einem Begriff dasselbe verstehen
 		\item Ein verwendeter Begriff muss in der gesamten Anwendung dieselbe Bedeutung haben
 	\end{itemize}
@@ -254,7 +254,7 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 	
 \onslide+<4->
 	
-	\item Bei vielen Teilnehmern sollte man die Erstellung der Beispiele in Kleingruppen delegieren
+	\item Bei vielen Teilnehmern: Erstellung der Beispiele in Kleingruppen
 \end{itemize}
 
 \end{frame}
@@ -268,7 +268,7 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 	\item Im Idealfall sollten die Beispiele direkt als Tests ausführbar sein
 	\item Sie müssen für alle Beteiligten lesbar sein
 	\item Sie sollten sich auf das Notwendige beschränken. Kein Gluecode.
-	\item Es existieren Frameworks, um in möglichst \glqq untechnischer\grqq Form Tests zu schreiben:
+	\item Es existieren Frameworks, um in möglichst \glqq untechnischer\grqq{} Form Tests zu schreiben:
 	\begin{itemize}
 		\item BDD-Tools wie Cucumber (http://cukes.info)
 		\item Webbasiert wie Concordion (http://www.concordion.org)
@@ -328,14 +328,14 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 	
 	\item So bestelle ich aktuell:
 	\begin{itemize}
-		\item Wenn ich weniger als 10 Würstchen habe (Dienstags bei 20)
+		\item Wenn ich 10 oder weniger Würstchen habe (Dienstags: 20)
 		\item Nur vor 16:00 Uhr
 	\end{itemize}
 \end{itemize}
 
 \onslide+<2->
 	
-$\Rightarrow$ Bitte erstellt in kleinen Gruppen Beispiele!
+$\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
 
 \end{frame}
 
@@ -363,6 +363,29 @@ $\Rightarrow$ Bitte erstellt in kleinen Gruppen Beispiele!
 
 \begin{center}
 \includegraphics[height=7cm]{GutesBeispiel.png} \newline
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Fazit}
+
+\begin{itemize}
+	\item Zentraler Aspekt ist Kommunikation im Specification Workshop
+	\item Wesentliches Ergebnis ist eine fachliche Modellierung der Domäne
+	\item Spezifikation geht alle an (Auftraggeber, Entwickler, QA, Support)
+	\item Dann ist es möglich, eine Quelle für Anforderungen und Dokumentation mit Verbindung zur Anwendung zu haben
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Bücher zum Thema}
+
+\begin{center}
+\includegraphics[height=7cm]{CommunicationGap.png}
+\hfill
+\includegraphics[height=7cm]{SpecificationByExample.png}
 \end{center}
 
 \end{frame}
