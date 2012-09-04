@@ -70,7 +70,7 @@
 \begin{itemize}
 	\item Beschreibung der Anforderung
 	\begin{itemize}
-		\item Alle sollen das gleiche Verständnis haben.
+		\item Alle sollen das gleiche Verständnis haben
 	\end{itemize}
 
 \onslide+<2->
@@ -85,7 +85,7 @@
 	
 	\item Ausführbare Dokumentation
 	\begin{itemize}
-		\item Sicherstellen, dass die Dokumentation zur Anwendung passt.
+		\item Sicherstellen, dass die Dokumentation zur Anwendung passt
 		\item Hilfestellung bei Supportfällen
 	\end{itemize}
 \end{itemize}
@@ -102,11 +102,48 @@ $\Rightarrow$ Single Source of Truth
 
 \begin{itemize}
 	\item Ein einziges Repository für die Informationen
-	\item Mit Beschreibung \em und \em Tests
+	\item Mit Beschreibung \em und \em Beispielen
 	\item In einer für jeden verständlichen Formulierung
-	\item Integriert mit der Anwendung, damit durch die Tests die Konsistenz mit der Anwendung verifiziert werden kann.
+	\item Integriert mit der Anwendung, damit durch die Akzeptanztests die Konsistenz mit der Anwendung verifiziert werden kann
 \end{itemize}
 
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Wie man Beispiele in Akzeptanztests umsetzen kann}
+
+\begin{itemize}
+	\item Im Idealfall sollten die Beispiele direkt als Tests ausführbar sein
+	\item Sie müssen für alle Beteiligten lesbar sein
+	\item Sie sollten sich auf das Notwendige beschränken. Kein Gluecode.
+	\item Es existieren Frameworks, um in möglichst \glqq untechnischer\grqq{} Form Tests zu schreiben:
+	\begin{itemize}
+		\item BDD-Tools wie Cucumber (http://cukes.info)
+		\item Webbasiert wie Concordion (http://www.concordion.org)
+		\item Tabellenbasiert wie Fitnesse (http://www.fitnesse.org)
+	\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Cucumber}
+\includegraphics[width=\textwidth]{Cucumber.png} \newline
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Concordion}
+\includegraphics[width=\textwidth]{Concordion.png} \newline
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Fitnesse}
+\includegraphics[width=\textwidth]{Fitnesse.png} \newline
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,7 +154,7 @@ $\Rightarrow$ Single Source of Truth
 	\begin{itemize}
 		\item Es entsteht ein gemeinsames Verständnis
 		\item Stille Annahmen werden explizit
-		\item Es fliessen unterschiedliche Sichtweisen und Erfahrungen ein
+		\item Es fließen unterschiedliche Sichtweisen und Erfahrungen ein
 	\end{itemize}
 	
 	\item Fokus
@@ -141,7 +178,7 @@ $\Rightarrow$ Specification Workshops
 	\item Direkte Kommunikation und Diskussion der Teilnehmer fördern
 	\begin{itemize}
 		\item Schnellen Informationsfluss durch Fragen und direkte Antworten
-		\item Entdecken von Widersprüchen, Lücken, Mißverständnissen
+		\item Entdecken von Widersprüchen, Lücken, Missverständnissen
 		\item Gemeinsames Verständnis
 	\end{itemize}
 
@@ -262,43 +299,6 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Wie man Beispiele in Akzeptanztests umsetzen kann}
-
-\begin{itemize}
-	\item Im Idealfall sollten die Beispiele direkt als Tests ausführbar sein
-	\item Sie müssen für alle Beteiligten lesbar sein
-	\item Sie sollten sich auf das Notwendige beschränken. Kein Gluecode.
-	\item Es existieren Frameworks, um in möglichst \glqq untechnischer\grqq{} Form Tests zu schreiben:
-	\begin{itemize}
-		\item BDD-Tools wie Cucumber (http://cukes.info)
-		\item Webbasiert wie Concordion (http://www.concordion.org)
-		\item Tabellenbasiert wie Fitnesse (http://www.fitnesse.org)
-	\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Cucumber}
-\includegraphics[width=\textwidth]{Cucumber.png} \newline
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Concordion}
-\includegraphics[width=\textwidth]{Concordion.png} \newline
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Fitnesse}
-\includegraphics[width=\textwidth]{Fitnesse.png} \newline
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Von den Beispielen hin zur Spezifikation}
 
 \begin{itemize}
@@ -362,7 +362,11 @@ $\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
 \begin{frame}{Gutes Beispiel}
 
 \begin{center}
-\includegraphics[height=7cm]{GutesBeispiel.png} \newline
+\includegraphics[width=8cm]{GutesBeispiel1.png} \newline
+\onslide+<2->
+\includegraphics[width=8cm]{GutesBeispiel2.png} \newline
+\onslide+<3->
+\includegraphics[width=8cm]{GutesBeispiel3.png} \newline
 \end{center}
 
 \end{frame}
@@ -372,7 +376,11 @@ $\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
 
 \begin{itemize}
 	\item Zentraler Aspekt ist Kommunikation im Specification Workshop
-	\item Wesentliches Ergebnis ist eine fachliche Modellierung der Domäne
+	\item Wesentliche Ergebnisse:
+	\begin{itemize}
+		\item Eine fachliche Modellierung der Domäne
+		\item Ausführbare Spezifikationsbeispiele (Tests)
+	\end{itemize}
 	\item Spezifikation geht alle an (Auftraggeber, Entwickler, QA, Support)
 	\item Dann ist es möglich, eine Quelle für Anforderungen und Dokumentation mit Verbindung zur Anwendung zu haben
 \end{itemize}
