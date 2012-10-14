@@ -7,7 +7,6 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamercovered{dynamic}
 
-
 \AtBeginPart{\frame{\partpage}}
 
 \author{Nicole Rauch, Steffen Eichenberg}
@@ -18,14 +17,21 @@
 
 \usepackage{ngerman}
 %\usepackage[utf8x,utf8]{inputenc}
-%\usepackage[T1]{fontenc}
-%\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
 %\usepackage[scaled=0.82]{beramono} % bitstream vera sans mono
+%\usepackage[scaled=0.95]{berasans}
+
+\usepackage{bera}
+
+%\renewcommand{\familydefault}{\sfdefault}
 
 %\usepackage{tikz}
 %\usetikzlibrary{shapes,backgrounds,mindmap}
 
-\usefonttheme{serif}
+%\usefonttheme{serif} % von Marc
+%\usefonttheme{sansserif}
+\usefonttheme{default}
 
 \definecolor[named]{keywords}{HTML}{005D35}
 \definecolor[named]{comments}{HTML}{808080}

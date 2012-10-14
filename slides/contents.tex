@@ -1,6 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Überblick über die Präsentation}
 
+\Large{Specification by Example}
+
+\vspace{2em}
+
 \begin{itemize}
 \onslide<1>
 
@@ -90,8 +94,9 @@
 	\end{itemize}
 \end{itemize}
 
+\vspace{1em}
+
 \onslide+<4->
-Wir brauchen:	
 $\Rightarrow$ Single Source of Truth
 
 \end{frame}
@@ -103,92 +108,65 @@ $\Rightarrow$ Single Source of Truth
 \begin{itemize}
 	\item Ein einziges Repository für die Informationen
 	\item Mit Beschreibung \em und \em Beispielen
-	\item In einer für jeden verständlichen Formulierung
-	\item Integriert mit der Anwendung, damit durch die Akzeptanztests die Konsistenz mit der Anwendung verifiziert werden kann
+	\item Für jeden lesbar und verständlich formuliert
+        \item Beispiele als Akzeptanztests ausführbar
+
+%	\item Gängige Tools:
+%	\begin{itemize}
+%		\item BDD-Tools wie Cucumber (http://cukes.info)
+%		\item Webbasiert wie Concordion (http://www.concordion.org)
+%		\item Tabellenbasiert wie Fitnesse (http://www.fitnesse.org)
+%	\end{itemize}
 \end{itemize}
 
 \end{frame}
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Wie man Beispiele in Akzeptanztests umsetzen kann}
-
-\begin{itemize}
-	\item Im Idealfall sollten die Beispiele direkt als Tests ausführbar sein
-	\item Sie müssen für alle Beteiligten lesbar sein
-	\item Sie sollten sich auf das Notwendige beschränken. Kein Gluecode.
-	\item Es existieren Frameworks, um in möglichst \glqq untechnischer\grqq{} Form Tests zu schreiben:
-	\begin{itemize}
-		\item BDD-Tools wie Cucumber (http://cukes.info)
-		\item Webbasiert wie Concordion (http://www.concordion.org)
-		\item Tabellenbasiert wie Fitnesse (http://www.fitnesse.org)
-	\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Cucumber}
-\includegraphics[width=\textwidth]{Cucumber.png} \newline
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Concordion}
-\includegraphics[width=\textwidth]{Concordion.png} \newline
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Fitnesse}
-\includegraphics[width=\textwidth]{Fitnesse.png} \newline
-\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}{Cucumber}
+%\includegraphics[width=\textwidth]{Cucumber.png} \newline
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}{Concordion}
+%\includegraphics[width=\textwidth]{Concordion.png} \newline
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}{Fitnesse}
+%\includegraphics[width=\textwidth]{Fitnesse.png} \newline
+%\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Wie wir dahin kommen}
 
+
 \begin{itemize}
-	\item Kommunikation und Zusammenarbeit \em aller \em Beteiligten 
+	\item Kommunikation und Diskussion \em aller \em Beteiligten 
 	\begin{itemize}
-		\item Es entsteht ein gemeinsames Verständnis
+		\item Schneller Informationsfluss durch Fragen und direkte Antworten
+		\item Entdecken von Widersprüchen, Lücken, Missverständnissen
 		\item Stille Annahmen werden explizit
-		\item Es fließen unterschiedliche Sichtweisen und Erfahrungen ein
+		\item Gemeinsames Verständnis entsteht
+		\item Unterschiedliche Sichtweisen und Erfahrungen fließen ein
 	\end{itemize}
 	
 	\item Fokus
 	\begin{itemize}
 		\item Konzentration auf die fachlich wichtigen Aspekte
-		\item Das Ziel muss sein, die Single Source of Truth zu schaffen
+                \item Strukturiertes Vorgehen
+		\item Ziel: Schaffung der Single Source of Truth
 	\end{itemize}
 \end{itemize}
+
+
+\vspace{1em}
 
 \onslide+<2->
-	
 $\Rightarrow$ Specification Workshops
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Ein Workshop ist notwendig, weil}
-
-\begin{itemize}
-	\item Direkte Kommunikation und Diskussion der Teilnehmer fördern
-	\begin{itemize}
-		\item Schnellen Informationsfluss durch Fragen und direkte Antworten
-		\item Entdecken von Widersprüchen, Lücken, Missverständnissen
-		\item Gemeinsames Verständnis
-	\end{itemize}
-
-	\item Die zeitliche Begrenzung betont
-	\begin{itemize}
-		\item Die Wichtigkeit, zu einem Ergebnis zu kommen
-		\item Den Fokus
-		\item Ein strukturiertes Vorgehen
-	\end{itemize}
-\end{itemize}
 
 \end{frame}
 
@@ -208,7 +186,7 @@ $\Rightarrow$ Specification Workshops
 		\item Unbedingtes Timeboxing
 		\item ca. 4 Stunden für 2 Wochen Entwicklung
 	\end{itemize}
-	\item Durchführung mit Moderator: 
+	\item Moderator zur Sicherstellung von: 
 	\begin{itemize}
 		\item Fokussierung
 		\item Ergebniserreichung
@@ -227,7 +205,7 @@ $\Rightarrow$ Specification Workshops
 	\item Die anderen Teilnehmer befragen ihn, um Klarheit zu erhalten
 	\item Alle erarbeiten gemeinsam Beispiele
 	\item Die Beispiele werden zusammengeführt und auf das Wesentliche reduziert
-	\item Aus den Beispielen wird eine Spezifikation abgeleitet
+	\item Aus den Beispielen wird die ihnen zugrundeliegende Spezifikation abgeleitet
 \end{enumerate}
 
 \end{frame}
@@ -236,20 +214,22 @@ $\Rightarrow$ Specification Workshops
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Was ein Specification Workshop \em nicht \em ist}
 
+Der Workshop ist...
+
 \begin{itemize}
-	\item Der Workshop ist kein Meeting
+	\item ... kein Meeting
 	\begin{itemize}
-		\item Es geht darum, Ergebnisse zu erzielen
+		\item \emph{Ergebnisse} erzielen
 	\end{itemize}
 	
-	\item Der Workshop ist keine Präsentation
+	\item ... keine Präsentation
 	\begin{itemize}
-		\item Die Teilnehmer sollen miteinander das Ergebnis erarbeiten
+		\item Die Ergebnisse \emph{miteinander} erarbeiten
 	\end{itemize}
 	
-	\item Der Workshop ist keine Software Design Session
+	\item ... keine technische Design Session
 	\begin{itemize}
-		\item Es geht darum, fachliche Klarheit zu erzielen. Technisches Design ist Sache der Entwickler
+		\item \emph{Fachliche} Klarheit herstellen
 	\end{itemize}
 	
 \end{itemize}
@@ -276,17 +256,17 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 	
 	\item Namensgebung
 	\begin{itemize}
-		\item Alle wesentlichen Konzepte brauchen klare, fachlich verständliche Namen
+		\item Alle wesentlichen Konzepte brauchen klare, \emph{fachlich} verständliche Namen
 		\item Jeder soll unter einem Begriff dasselbe verstehen
-		\item Ein verwendeter Begriff muss in der gesamten Anwendung dieselbe Bedeutung haben
+		\item Ein verwendeter Begriff muss in der gesamten Anwendung (und im Code!) dieselbe Bedeutung haben
 	\end{itemize}
 	
 \onslide+<3->
 	
 	\item Formeln
 	\begin{itemize}
-		\item Oft verschleiern Formeln wichtige Details
-		\item Formeln müssen hinterfragt und verstanden werden
+		\item Verschleiern oft wichtige Details oder implizite Annahmen
+		\item Müssen hinterfragt und verstanden werden
 	\end{itemize}
 	
 \onslide+<4->
@@ -304,10 +284,10 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 \begin{itemize}
 	\item Aus den Beispielen wird die Spezifikation abgeleitet und gegen die Eingangsfragen geprüft
 	\item Dadurch kann man die Vollständigkeit in beide Richtungen prüfen
-	\item Die Spezifikation ist genau dann gut, wenn sie auch jemand versteht, der nicht am Workshop teilgenommen hat
-	\item Die Beschreibung soll eine Zusammenfassung der Beispiele sein
+	\item Muss auch von jemand verstanden werden, der nicht am Workshop teilgenommen hat
+	\item Die Spezifikation fasst die Beispiele zusammen
 	\item Der Titel sollte heissen wie die Eingabe einer Suchanfrage
-	\item Index und Glossar müssen aktualisiert werden
+	\item Spezifikation in Index und Glossar aufnehmen
 \end{itemize}
 
 \end{frame}
@@ -339,18 +319,9 @@ $\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Vorstellung möglicher Resultate in Fitnesse}
-
-\begin{itemize}
-	\item Ein Beispiel mit Verbesserungspotenzial
-	\item Ein Beispiel mit starker Aspekttrennung
-\end{itemize}
-
-\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Schlechtes Beispiel}
+\begin{frame}{Beispiel 1}
 
 \begin{center}
 \includegraphics[height=7cm]{SchlechtesBeispiel.png} \newline
@@ -359,7 +330,7 @@ $\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Gutes Beispiel}
+\begin{frame}{Beispiel 2}
 
 \begin{center}
 \includegraphics[width=8cm]{GutesBeispiel1.png} \newline
@@ -404,21 +375,29 @@ $\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
 \begin{frame}{Vielen Dank!}
 
         Folien auf GitHub:
+        \vspace{-0.8em}
         \begin{center}
                 \url{https://github.com/leider/Beispielhaft}
         \end{center}
 
         \begin{block}{Andreas Leidig}
         \begin{description}[Twitterxx]
-                \item[E-Mail]  \href{mailto:andreas.leidig@msg-gillardon.de}{\texttt{andreas.leidig@msg-gillardon.de}}
+%                \item[E-Mail]  \href{mailto:andreas.leidig@msg-gillardon.de}{\texttt{andreas.leidig@msg-gillardon.de}}
                 \item[Twitter] \href{http://twitter.com/leiderleider}{\texttt{@leiderleider}}
         \end{description}
         \end{block}
 
         \begin{block}{Nicole Rauch}
         \begin{description}[Twitterxx]
-                \item[E-Mail]  \href{mailto:nicole.rauch@msg-gillardon.de}{\texttt{nicole.rauch@msg-gillardon.de}}
+%                \item[E-Mail]  \href{mailto:nicole.rauch@msg-gillardon.de}{\texttt{nicole.rauch@msg-gillardon.de}}
                 \item[Twitter] \href{http://twitter.com/NicoleRauch}{\texttt{@NicoleRauch}}
+        \end{description}
+        \end{block}
+
+        \begin{block}{Steffen Eichenberg}
+        \begin{description}[Twitterxx]
+%                \item[E-Mail]  \href{mailto:nicole.rauch@msg-gillardon.de}{\texttt{nicole.rauch@msg-gillardon.de}}
+                \item[Twitter] \href{http://twitter.com/seichenberg}{\texttt{@seichenberg}}
         \end{description}
         \end{block}
 \end{frame}
