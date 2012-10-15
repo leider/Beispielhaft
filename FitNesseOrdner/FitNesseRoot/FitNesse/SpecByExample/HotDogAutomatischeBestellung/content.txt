@@ -1,0 +1,6 @@
+Das System soll beim Zutreffen bestimmter Bedingungen automatisch beim Lieferanten nachbestellen.
+
+[[Die Bestellgrenze ist abhängig vom Wochentag][>BestellGrenze]]
+
+[[Unterhalb der Bestellgrenze wird bestellt][>BedingungFuerMenge]]
+[[Nach 16:00 Uhr wird niemals bestellt][>BedingungFuerUhrzeit]]

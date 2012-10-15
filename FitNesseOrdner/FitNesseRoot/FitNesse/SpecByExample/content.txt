@@ -1,0 +1,6 @@
+!contents
+
+!path ../HerbstCampus/HotDog/bin
+!path ./fitlibrary-2.0.jar
+!path lib/*.jar
+!define TEST_RUNNER {fitlibrary.suite.FitLibraryServer}

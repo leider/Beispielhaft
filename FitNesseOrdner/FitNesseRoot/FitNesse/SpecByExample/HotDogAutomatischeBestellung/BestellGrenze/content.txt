@@ -1,0 +1,8 @@
+!2 Die Bestellgrenze ist abhängig vom Wochentag
+Normal wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Bestellgrenze bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
+Ansonsten gelten die üblichen BedingungFuerUhrzeit.
+|hotdog.automatischebestellung.Bestellgrenze|
+|wochentag|bestellgrenze?|
+|Montag|10|
+|Dienstag|20|
+|Freitag|10|
