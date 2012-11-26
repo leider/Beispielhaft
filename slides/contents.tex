@@ -6,7 +6,6 @@
 \vspace{2em}
 
 \begin{itemize}
-\onslide<1>
 
 	\item Motivation
 	\begin{itemize}
@@ -14,18 +13,20 @@
 		\item Welche Probleme werden adressiert?
 	\end{itemize}
 
-\onslide<2>
 
 	\item Ziel
 	\begin{itemize}
 		\item Was erhalten wir, wenn wir das richtig anwenden?
 	\end{itemize}
 
-\onslide<3>
-
 	\item Weg
 	\begin{itemize}
 		\item Wie kommen wir dahin?
+	\end{itemize}
+
+	\item Beispiel
+	\begin{itemize}
+		\item Wie kann so etwas aussehen?
 	\end{itemize}
 \end{itemize}
 
@@ -37,7 +38,6 @@
 
 \begin{itemize}
 
-\onslide<1>
 	
 	\item Auftraggeber:
 
@@ -46,7 +46,6 @@
 		\item \glqq Ich will das Ganze möglichst preiswert.\grqq
 	\end{itemize}
 	
-\onslide<2>
 	
 	\item Entwickler:
 	
@@ -55,7 +54,6 @@
 		\item \glqq Wann bin ich fertig?\grqq
 	\end{itemize}
 	
-\onslide<3>
 	
 	\item Nach der Lieferung:
 	
@@ -77,7 +75,6 @@
 		\item Alle sollen das gleiche Verständnis haben
 	\end{itemize}
 
-\onslide+<2->
 	
 	\item Akzeptanztests für die Entwicklung
 	\begin{itemize}
@@ -85,41 +82,39 @@
 		\item Werden im Laufe der Entwicklung \glqq begrünt\grqq
 	\end{itemize}
 
-\onslide+<3->
 	
 	\item Ausführbare Dokumentation
 	\begin{itemize}
-		\item Sicherstellen, dass die Dokumentation zur Anwendung passt
+		\item Die Dokumentation muss zur Anwendung passen
 		\item Hilfestellung bei Supportfällen
 	\end{itemize}
 \end{itemize}
 
 \vspace{1em}
 
-\onslide+<4->
 $\Rightarrow$ Single Source of Truth
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Was wir dazu brauchen}
-
-\begin{itemize}
-	\item Ein einziges Repository für die Informationen
-	\item Mit Beschreibung \em und \em Beispielen
-	\item Für jeden lesbar und verständlich formuliert
-        \item Beispiele als Akzeptanztests ausführbar
-
+%\begin{frame}{Was wir dazu brauchen}
+%
+%\begin{itemize}
+%	\item Ein einziges Repository für die Informationen
+%	\item Mit Beschreibung \em und \em Beispielen
+%	\item Für jeden lesbar und verständlich formuliert
+%        \item Beispiele als Akzeptanztests ausführbar
+%
 %	\item Gängige Tools:
 %	\begin{itemize}
 %		\item BDD-Tools wie Cucumber (http://cukes.info)
 %		\item Webbasiert wie Concordion (http://www.concordion.org)
 %		\item Tabellenbasiert wie Fitnesse (http://www.fitnesse.org)
 %	\end{itemize}
-\end{itemize}
-
-\end{frame}
+%\end{itemize}
+%
+%\end{frame}
 
 
 
@@ -147,11 +142,11 @@ $\Rightarrow$ Single Source of Truth
 \begin{itemize}
 	\item Kommunikation und Diskussion \em aller \em Beteiligten 
 	\begin{itemize}
+		\item Unterschiedliche Sichtweisen und Erfahrungen
 		\item Schneller Informationsfluss durch Fragen und direkte Antworten
 		\item Entdecken von Widersprüchen, Lücken, Missverständnissen
 		\item Stille Annahmen werden explizit
 		\item Gemeinsames Verständnis entsteht
-		\item Unterschiedliche Sichtweisen und Erfahrungen fließen ein
 	\end{itemize}
 	
 	\item Fokus
@@ -165,80 +160,79 @@ $\Rightarrow$ Single Source of Truth
 
 \vspace{1em}
 
-\onslide+<2->
 $\Rightarrow$ Specification Workshops
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Specification Workshop}
-
-\begin{itemize}
-	\item Teilnehmer: 
-	\begin{itemize}
-		\item Auftraggeber, Kunde, Product Owner
-		\item Entwickler
-		\item Tester, QA-Personen
-	\end{itemize}
-	\item Zeit: 
-	\begin{itemize}
-		\item Unbedingtes Timeboxing
-		\item ca. 4 Stunden für 2 Wochen Entwicklung
-	\end{itemize}
-	\item Moderator zur Sicherstellung von: 
-	\begin{itemize}
-		\item Fokussierung
-		\item Ergebniserreichung
-	\end{itemize}
-\end{itemize}
-
-\end{frame}
+%\begin{frame}{Specification Workshop}
+%
+%\begin{itemize}
+%	\item Teilnehmer: 
+%	\begin{itemize}
+%		\item Auftraggeber, Kunde, Product Owner
+%		\item Entwickler
+%		\item Tester, QA-Personen
+%	\end{itemize}
+%	\item Zeit: 
+%	\begin{itemize}
+%		\item Unbedingtes Timeboxing
+%		\item ca. 4 Stunden für 2 Wochen Entwicklung
+%	\end{itemize}
+%	\item Moderator zur Sicherstellung von: 
+%	\begin{itemize}
+%		\item Fokussierung
+%		\item Ergebniserreichung
+%	\end{itemize}
+%\end{itemize}
+%
+%\end{frame}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{So kann ein Specification Workshop ablaufen}
 
-\begin{enumerate}
+\begin{itemize}
 	\item Der Auftraggeber beschreibt sein zu lösendes Problem
 	\item Die anderen Teilnehmer befragen ihn, um Klarheit zu erhalten
 	\item Alle erarbeiten gemeinsam Beispiele
 	\item Die Beispiele werden zusammengeführt und auf das Wesentliche reduziert
 	\item Aus den Beispielen wird die ihnen zugrundeliegende Spezifikation abgeleitet
-\end{enumerate}
+\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Was ein Specification Workshop \em nicht \em ist}
-
-Der Workshop ist...
-
-\begin{itemize}
-	\item ... kein Meeting
-	\begin{itemize}
-		\item \emph{Ergebnisse} erzielen
-	\end{itemize}
-	
-	\item ... keine Präsentation
-	\begin{itemize}
-		\item Die Ergebnisse \emph{miteinander} erarbeiten
-	\end{itemize}
-	
-	\item ... keine technische Design Session
-	\begin{itemize}
-		\item \emph{Fachliche} Klarheit herstellen
-	\end{itemize}
-	
-\end{itemize}
-
-\onslide+<2->
-	
-$\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
-
-\end{frame}
+%\begin{frame}{Was ein Specification Workshop \em nicht \em ist}
+%
+%Der Workshop ist...
+%
+%\begin{itemize}
+%	\item ... kein Meeting
+%	\begin{itemize}
+%		\item \emph{Ergebnisse} erzielen
+%	\end{itemize}
+%	
+%	\item ... keine Präsentation
+%	\begin{itemize}
+%		\item Die Ergebnisse \emph{miteinander} erarbeiten
+%	\end{itemize}
+%	
+%	\item ... keine technische Design Session
+%	\begin{itemize}
+%		\item \emph{Fachliche} Klarheit herstellen
+%	\end{itemize}
+%	
+%\end{itemize}
+%
+%\onslide+<2->
+%	
+%$\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
+%
+%\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -252,7 +246,6 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 		\item Oft hilft ein Aufteilen nach Aspekten
 	\end{itemize}
 	
-\onslide+<2->
 	
 	\item Namensgebung
 	\begin{itemize}
@@ -261,7 +254,6 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 		\item Ein verwendeter Begriff muss in der gesamten Anwendung (und im Code!) dieselbe Bedeutung haben
 	\end{itemize}
 	
-\onslide+<3->
 	
 	\item Formeln
 	\begin{itemize}
@@ -269,7 +261,6 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 		\item Müssen hinterfragt und verstanden werden
 	\end{itemize}
 	
-\onslide+<4->
 	
 	\item Bei vielen Teilnehmern: Erstellung der Beispiele in Kleingruppen
 \end{itemize}
@@ -286,8 +277,6 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 	\item Dadurch kann man die Vollständigkeit in beide Richtungen prüfen
 	\item Muss auch von jemand verstanden werden, der nicht am Workshop teilgenommen hat
 	\item Die Spezifikation fasst die Beispiele zusammen
-	\item Der Titel sollte heissen wie die Eingabe einer Suchanfrage
-	\item Spezifikation in Index und Glossar aufnehmen
 \end{itemize}
 
 \end{frame}
@@ -312,8 +301,6 @@ $\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
 		\item Nur vor 16:00 Uhr
 	\end{itemize}
 \end{itemize}
-
-\onslide+<2->
 	
 $\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
 
@@ -333,11 +320,16 @@ $\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
 \begin{frame}{Beispiel 2}
 
 \begin{center}
-\includegraphics[width=8cm]{GutesBeispiel1.png} \newline
+\includegraphics[width=5cm]{bestellschluss.png}
+\hfill{}
 \onslide+<2->
-\includegraphics[width=8cm]{GutesBeispiel2.png} \newline
+\includegraphics[width=5cm]{wochentag.png}
+ \newline
 \onslide+<3->
-\includegraphics[width=8cm]{GutesBeispiel3.png} \newline
+\includegraphics[width=5cm]{bestellgrenze.png}
+\hfill{}
+\onslide+<4->
+\includegraphics[width=5cm]{keineBestellungNachBestellschluss.png} 
 \end{center}
 
 \end{frame}
