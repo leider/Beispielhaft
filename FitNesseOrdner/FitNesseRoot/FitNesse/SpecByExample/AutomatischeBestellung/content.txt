@@ -1,5 +1,12 @@
+!1 Es gibt einen Bestellschluss
+Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Dieser liegt an jedem Tag bei 16:00 Uhr.
+
+|hotdog.automatischebestellung.Bestellschluss|
+|bestellschluss?|
+|16:00|
+
 !1 Die Bestellgrenze ist abhängig vom Wochentag
-Normal wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Bestellgrenze bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
+Sei der Bestellschluss noch nicht erreicht. Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Bestellgrenze bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
 
 |hotdog.automatischebestellung.Bestellgrenze|
 |wochentag|bestellgrenze?|
@@ -7,9 +14,9 @@ Normal wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Bestellgr
 |Dienstag|20|
 |Freitag|10|
 
-!1 Unterhalb der Bestellgrenze wird bestellt.
-Wie oben beschrieben gibt eine Bestellgrenze. Im Folgenden gehen wir davon aus, dass diese bei 10 Hot Dogs liegt.
-Sind tagsüber 10 oder weniger Hot Dogs im Bestand, wird bestellt.
+!1 Unterhalb der Bestellgrenze wird bestellt
+Wie oben beschrieben gibt es eine Bestellgrenze. Im Folgenden gehen wir davon aus, dass diese bei 10 Hot Dogs liegt.
+Sind vor Bestellschluss 10 oder weniger Hot Dogs im Bestand, wird bestellt.
 
 |hotdog.automatischebestellung.BedingungFuerMenge|
 |menge|wird bestellt?|
@@ -17,8 +24,8 @@ Sind tagsüber 10 oder weniger Hot Dogs im Bestand, wird bestellt.
 |10|ja|
 |9|ja|
 
-!1 Nach 16:00 Uhr wird niemals bestellt
-Ab 16:00 Uhr wird niemals bestellt, selbst wenn der Bestand unter die Bestellgrenze gefallen ist. Im Folgenden gehen wir davon aus, dass der Bestand unter die Bestellgrenze gefallen ist.
+!1 Nach Bestellschluss wird niemals bestellt
+Sei der Bestellschluss um 16:00 Uhr. Danach wird niemals bestellt, selbst wenn der Bestand unter die Bestellgrenze gefallen ist. Im Folgenden gehen wir davon aus, dass der Bestand unter die Bestellgrenze gefallen ist.
 
 |hotdog.automatischebestellung.BedingungFuerUhrzeit|
 |uhrzeit|wird bestellt?|
