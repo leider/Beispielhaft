@@ -8,6 +8,7 @@
 *.out
 
 slides/folien.pdf
+slides/handout.pdf
 
 *.snm
 
@@ -18,3 +19,29 @@ slides/folien.pdf
 *.zip
 
 *~
+
+SpecByExample/HotDog/bin/
+SpecByExample/.metadata/
+
+FitNesseOrdner/fitlibrary-2.0.jar
+FitNesseOrdner/fitnesse.jar
+FitNesseOrdner/log4j.properties
+FitNesseOrdner/lib/
+FitNesseOrdner/FitNesseRoot/files/testResults/
+FitNesseOrdner/FitNesseRoot/files/templates/
+FitNesseOrdner/FitNesseRoot/files/testFiles/
+FitNesseOrdner/FitNesseRoot/files/images/
+FitNesseOrdner/FitNesseRoot/files/javascript/
+FitNesseOrdner/FitNesseRoot/FitLibrary/
+FitNesseOrdner/FitNesseRoot/ErrorLogs/
+FitNesseOrdner/FitNesseRoot/PageFooter/
+FitNesseOrdner/FitNesseRoot/RecentChanges/
+FitNesseOrdner/FitNesseRoot/files/dots/
+FitNesseOrdner/FitNesseRoot/files/gameImages/
+FitNesseOrdner/FitNesseRoot/files/html/
+FitNesseOrdner/FitNesseRoot/PageHeader/
+FitNesseOrdner/FitLibraryLogger.properties
+FitNesseOrdner/FitNesseRoot/FixturingLogger.properties
+FitNesseOrdner/FitNesseRoot/FitNesse/
+FitNesseOrdner/FitNesseRoot/updateList
+FitNesseOrdner/FitNesseRoot/properties
