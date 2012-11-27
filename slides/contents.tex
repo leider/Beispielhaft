@@ -106,15 +106,17 @@ $\Rightarrow$ Specification Workshops
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Darauf sollte man achten}
 
-\begin{itemize}
-	\item Komplizierte Beispiele
-	
-	\item Namensgebung
-	
-	\item Formeln
-	
-	\item Bei vielen Teilnehmern: Erstellung der Beispiele in Kleingruppen
-\end{itemize}
+
+\begin{tikzpicture}
+\node (img1)  {\includegraphics[width=6cm]{pics/Kompliziert.jpg} };
+\onslide+<2->{
+\node (img2) at (img1.south east) [yshift=0.5cm,xshift=2cm] {\includegraphics[width=6cm]{pics/Formeln.jpg}};
+}
+\onslide+<3->{
+\node (img3) at (img2.south west) [xshift=-1cm] {\includegraphics[width=6cm]{pics/Namen.jpg}};
+}
+\end{tikzpicture}
+
 
 \end{frame}
 
@@ -238,3 +240,16 @@ $\Rightarrow$ Bitte erstellt in kleinen Gruppen (ca. 4 Personen) Beispiele!
         \end{block}
 \end{frame}
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Quellen}
+
+\begin{itemize}
+\item Kompliziert.jpg: 
+\url{http://chestofbooks.com/crafts/metal/Elementary-Metal-Work/Nails-And-Nailed-Strips.html}
+\item Formeln.jpg: 
+\url{http://depts.washington.edu/ecnboard/wordpress/wp-content/uploads/2011/01/math_image-300x269.jpg}
+\item Namen.jpg: 
+\end{itemize}
+
+\end{frame}
