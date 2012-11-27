@@ -6,28 +6,13 @@
 \vspace{2em}
 
 \begin{itemize}
-
 	\item Motivation
-	\begin{itemize}
-		\item Wen geht es an?
-		\item Welche Probleme werden adressiert?
-	\end{itemize}
-
 
 	\item Ziel
-	\begin{itemize}
-		\item Was erhalten wir, wenn wir das richtig anwenden?
-	\end{itemize}
 
 	\item Weg
-	\begin{itemize}
-		\item Wie kommen wir dahin?
-	\end{itemize}
 
 	\item Beispiel
-	\begin{itemize}
-		\item Wie kann so etwas aussehen?
-	\end{itemize}
 \end{itemize}
 
 \end{frame}
@@ -71,23 +56,10 @@
 
 \begin{itemize}
 	\item Beschreibung der Anforderung
-	\begin{itemize}
-		\item Alle sollen das gleiche Verständnis haben
-	\end{itemize}
 
-	
 	\item Akzeptanztests für die Entwicklung
-	\begin{itemize}
-		\item Überprüfbare Kriterien
-		\item Werden im Laufe der Entwicklung \glqq begrünt\grqq
-	\end{itemize}
 
-	
 	\item Ausführbare Dokumentation
-	\begin{itemize}
-		\item Die Dokumentation muss zur Anwendung passen
-		\item Hilfestellung bei Supportfällen
-	\end{itemize}
 \end{itemize}
 
 \vspace{1em}
@@ -98,63 +70,13 @@ $\Rightarrow$ Single Source of Truth
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}{Was wir dazu brauchen}
-%
-%\begin{itemize}
-%	\item Ein einziges Repository für die Informationen
-%	\item Mit Beschreibung \em und \em Beispielen
-%	\item Für jeden lesbar und verständlich formuliert
-%        \item Beispiele als Akzeptanztests ausführbar
-%
-%	\item Gängige Tools:
-%	\begin{itemize}
-%		\item BDD-Tools wie Cucumber (http://cukes.info)
-%		\item Webbasiert wie Concordion (http://www.concordion.org)
-%		\item Tabellenbasiert wie Fitnesse (http://www.fitnesse.org)
-%	\end{itemize}
-%\end{itemize}
-%
-%\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}{Cucumber}
-%\includegraphics[width=\textwidth]{Cucumber.png} \newline
-%\end{frame}
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}{Concordion}
-%\includegraphics[width=\textwidth]{Concordion.png} \newline
-%\end{frame}
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}{Fitnesse}
-%\includegraphics[width=\textwidth]{Fitnesse.png} \newline
-%\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Wie wir dahin kommen}
 
 
 \begin{itemize}
 	\item Kommunikation und Diskussion \em aller \em Beteiligten 
-	\begin{itemize}
-		\item Unterschiedliche Sichtweisen und Erfahrungen
-		\item Schneller Informationsfluss durch Fragen und direkte Antworten
-		\item Entdecken von Widersprüchen, Lücken, Missverständnissen
-		\item Stille Annahmen werden explizit
-		\item Gemeinsames Verständnis entsteht
-	\end{itemize}
 	
-	\item Fokus
-	\begin{itemize}
-		\item Konzentration auf die fachlich wichtigen Aspekte
-                \item Strukturiertes Vorgehen
-		\item Ziel: Schaffung der Single Source of Truth
-	\end{itemize}
+	\item Fokus auf die Fachlichkeit
 \end{itemize}
 
 
@@ -163,31 +85,6 @@ $\Rightarrow$ Single Source of Truth
 $\Rightarrow$ Specification Workshops
 
 \end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}{Specification Workshop}
-%
-%\begin{itemize}
-%	\item Teilnehmer: 
-%	\begin{itemize}
-%		\item Auftraggeber, Kunde, Product Owner
-%		\item Entwickler
-%		\item Tester, QA-Personen
-%	\end{itemize}
-%	\item Zeit: 
-%	\begin{itemize}
-%		\item Unbedingtes Timeboxing
-%		\item ca. 4 Stunden für 2 Wochen Entwicklung
-%	\end{itemize}
-%	\item Moderator zur Sicherstellung von: 
-%	\begin{itemize}
-%		\item Fokussierung
-%		\item Ergebniserreichung
-%	\end{itemize}
-%\end{itemize}
-%
-%\end{frame}
 
 
 
@@ -205,62 +102,16 @@ $\Rightarrow$ Specification Workshops
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}{Was ein Specification Workshop \em nicht \em ist}
-%
-%Der Workshop ist...
-%
-%\begin{itemize}
-%	\item ... kein Meeting
-%	\begin{itemize}
-%		\item \emph{Ergebnisse} erzielen
-%	\end{itemize}
-%	
-%	\item ... keine Präsentation
-%	\begin{itemize}
-%		\item Die Ergebnisse \emph{miteinander} erarbeiten
-%	\end{itemize}
-%	
-%	\item ... keine technische Design Session
-%	\begin{itemize}
-%		\item \emph{Fachliche} Klarheit herstellen
-%	\end{itemize}
-%	
-%\end{itemize}
-%
-%\onslide+<2->
-%	
-%$\Rightarrow$ Es ist Aufgabe des Moderators, dies sicherzustellen
-%
-%\end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Darauf sollte man achten}
 
 \begin{itemize}
 	\item Komplizierte Beispiele
-	\begin{itemize}
-		\item Wo liegt die Ursache der Kompliziertheit?
-		\item Es geht vermutlich einfacher
-		\item Oft hilft ein Aufteilen nach Aspekten
-	\end{itemize}
-	
 	
 	\item Namensgebung
-	\begin{itemize}
-		\item Alle wesentlichen Konzepte brauchen klare, \emph{fachlich} verständliche Namen
-		\item Jeder soll unter einem Begriff dasselbe verstehen
-		\item Ein verwendeter Begriff muss in der gesamten Anwendung (und im Code!) dieselbe Bedeutung haben
-	\end{itemize}
-	
 	
 	\item Formeln
-	\begin{itemize}
-		\item Verschleiern oft wichtige Details oder implizite Annahmen
-		\item Müssen hinterfragt und verstanden werden
-	\end{itemize}
-	
 	
 	\item Bei vielen Teilnehmern: Erstellung der Beispiele in Kleingruppen
 \end{itemize}
