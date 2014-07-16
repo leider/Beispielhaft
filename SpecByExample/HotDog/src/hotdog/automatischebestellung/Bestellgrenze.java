@@ -1,10 +1,13 @@
 package hotdog.automatischebestellung;
 
-import fit.ColumnFixture;
 
-public class Bestellgrenze extends ColumnFixture {
+public class Bestellgrenze {
 	
-	public String wochentag;
+	private String wochentag;
+	
+	public void setWochentag(String wochentag){
+		this.wochentag = wochentag;
+	}
 	
 	public int bestellgrenze() {
 		if (wochentag.equalsIgnoreCase("dienstag")) {

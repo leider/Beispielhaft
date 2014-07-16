@@ -1,12 +1,15 @@
 package hotdog.automatischebestellung;
 
-import fit.ColumnFixture;
 
-public class BedingungFuerMenge extends ColumnFixture {
+public class BedingungFuerMenge  {
 
-	public int menge;
+	private int menge;
 
-	public String wirdBestellt() {
+	public void setMenge(int menge){
+		this.menge = menge;
+	}
+	
+	public String wirdPotentiellBestellt() {
 		if (menge <= 10) {
 			return "ja";
 		}

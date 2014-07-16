@@ -2,13 +2,15 @@ package hotdog.automatischebestellung;
 
 import org.joda.time.LocalTime;
 
-import fit.ColumnFixture;
+public class BedingungFuerUhrzeit {
 
-public class BedingungFuerUhrzeit extends ColumnFixture {
+	private String uhrzeit;
 
-	public String uhrzeit;
-
-	public String wirdBestellt() {
+	public void setUhrzeit(String uhrzeit){
+		this.uhrzeit = uhrzeit;
+	}
+	
+	public String wirdPotentiellBestellt() {
 		LocalTime time = LocalTime.parse(uhrzeit);
 		if (time.isAfter(LocalTime.parse("15:59"))) {
 			return "nein";

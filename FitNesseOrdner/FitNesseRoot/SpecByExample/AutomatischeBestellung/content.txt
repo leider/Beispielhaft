@@ -1,14 +1,14 @@
 !1 Es gibt einen Bestellschluss
 Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Dieser liegt an jedem Tag bei 16:00 Uhr.
 
-|hotdog.automatischebestellung.Bestellschluss|
+|Bestellschluss|
 |bestellschluss?|
 |16:00|
 
 !1 Die Bestellgrenze ist abhängig vom Wochentag
 Sei der Bestellschluss noch nicht erreicht. Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Bestellgrenze bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
 
-|hotdog.automatischebestellung.Bestellgrenze|
+|Bestellgrenze|
 |wochentag|bestellgrenze?|
 |Montag|10|
 |Dienstag|20|
@@ -18,8 +18,8 @@ Sei der Bestellschluss noch nicht erreicht. Normalerweise wird bei einem Bestand
 Wie oben beschrieben gibt es eine Bestellgrenze. Im Folgenden gehen wir davon aus, dass diese bei 10 Hot Dogs liegt.
 Sind vor Bestellschluss 10 oder weniger Hot Dogs im Bestand, wird bestellt.
 
-|hotdog.automatischebestellung.BedingungFuerMenge|
-|menge|wird bestellt?|
+|Bedingung fuer Menge|
+|menge|wird potentiell bestellt?|
 |11|nein|
 |10|ja|
 |9|ja|
@@ -27,8 +27,8 @@ Sind vor Bestellschluss 10 oder weniger Hot Dogs im Bestand, wird bestellt.
 !1 Nach Bestellschluss wird niemals bestellt
 Sei der Bestellschluss um 16:00 Uhr. Danach wird niemals bestellt, selbst wenn der Bestand unter die Bestellgrenze gefallen ist. Im Folgenden gehen wir davon aus, dass der Bestand unter die Bestellgrenze gefallen ist.
 
-|hotdog.automatischebestellung.BedingungFuerUhrzeit|
-|uhrzeit|wird bestellt?|
+|Bedingung fuer Uhrzeit|
+|uhrzeit|wird potentiell bestellt?|
 |15:59|ja|
 |16:00|nein|
 |16:01|nein|

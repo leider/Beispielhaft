@@ -1,6 +1,5 @@
 !contents
-
 !path ../SpecByExample/HotDog/bin
 !path ./fitlibrary-2.0.jar
 !path lib/*.jar
-!define TEST_RUNNER {fitlibrary.suite.FitLibraryServer}
+!define TEST_SYSTEM {slim} 

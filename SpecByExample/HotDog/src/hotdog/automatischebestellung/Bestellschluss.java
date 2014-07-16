@@ -1,8 +1,7 @@
 package hotdog.automatischebestellung;
 
-import fit.ColumnFixture;
 
-public class Bestellschluss extends ColumnFixture {
+public class Bestellschluss  {
 
 	public String bestellschluss() {
 		return "16:00";
