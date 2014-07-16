@@ -31,3 +31,12 @@ Nach Bestellschluss wird niemals bestellt.
 |17:59                                              |ja                       |
 |18:00                                              |nein                     |
 |18:01                                              |nein                     |
+
+!1 Ausführung der Bestellung
+
+|Ausfuehrung der Bestellung                                                            |
+|Bestellgrenze ist unterschritten|Bestellschluss ist noch nicht erreicht|wird bestellt?|
+|nein                            |nein                                  |nein          |
+|ja                              |nein                                  |nein          |
+|nein                            |ja                                    |nein          |
+|ja                              |ja                                    |ja            |
