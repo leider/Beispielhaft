@@ -1,16 +1,21 @@
 package hotdog.automatischebestellung;
 
 
-public class BedingungFuerMenge  {
+public class BedingungFuerMengeBeiEinerBestellgrenzeVon  {
 
 	private int menge;
+	private int grenze;
 
+	public BedingungFuerMengeBeiEinerBestellgrenzeVon(int grenze) {
+		this.grenze = grenze;
+	}
+	
 	public void setMenge(int menge){
 		this.menge = menge;
 	}
 	
 	public String wirdPotentiellBestellt() {
-		if (menge <= 10) {
+		if (menge <= grenze) {
 			return "ja";
 		}
 		return "nein";

@@ -45,3 +45,7 @@ FitNesseOrdner/FitNesseRoot/FixturingLogger.properties
 FitNesseOrdner/FitNesseRoot/FitNesse/
 FitNesseOrdner/FitNesseRoot/updateList
 FitNesseOrdner/FitNesseRoot/properties
+FitNesseOrdner/FitNesseRoot/files/css
+FitNesseOrdner/FitNesseRoot/TemplateLibrary
+fitnesse-standalone.jar
+updateDoNotCopyOverList
