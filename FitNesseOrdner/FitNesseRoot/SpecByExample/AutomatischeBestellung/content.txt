@@ -1,4 +1,5 @@
 !1 Es gibt einen Bestellschluss
+
 Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Dieser liegt an jedem Tag bei 16:00 Uhr.
 
 |Bestellschluss |
@@ -6,6 +7,7 @@ Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Dieser lieg
 |16:00          |
 
 !1 Die Bestellgrenze ist abhängig vom Wochentag
+
 Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Bestellgrenze bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
 
 |Bestellgrenze           |
@@ -15,15 +17,17 @@ Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Be
 |Freitag  |10            |
 
 !1 Unterhalb der Bestellgrenze wird bestellt
+
 Sind genauso viele oder weniger Hot Dogs im Bestand als die Bestellgrenze beschreibt, wird potentiell bestellt.
 
-|Bedingung fuer Menge bei einer Bestellgrenze von|25                       |
+|Bedingung fuer Bestand bei einer Bestellgrenze von|15                       |
 |menge                                           |wird potentiell bestellt?|
-|26                                              |nein                     |
-|25                                              |ja                       |
-|24                                              |ja                       |
+|16                                              |nein                     |
+|15                                              |ja                       |
+|14                                              |ja                       |
 
 !1 Nach Bestellschluss wird niemals bestellt
+
 Nach Bestellschluss wird niemals bestellt.
 
 |Bedingung fuer Uhrzeit bei einem Bestellschluss von|18:00                    |
@@ -33,6 +37,8 @@ Nach Bestellschluss wird niemals bestellt.
 |18:01                                              |nein                     |
 
 !1 Ausführung der Bestellung
+
+Die Bestellung wird ausgeführt, wenn sowohl die Bestellgrenze unterschritten wurde als auch der Bestellschluss noch nicht erreicht wurde.
 
 |Ausfuehrung der Bestellung                                                            |
 |Bestellgrenze ist unterschritten|Bestellschluss ist noch nicht erreicht|wird bestellt?|
