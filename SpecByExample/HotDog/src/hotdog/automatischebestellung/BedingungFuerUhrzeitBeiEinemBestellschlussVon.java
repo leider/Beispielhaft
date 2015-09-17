@@ -10,10 +10,12 @@ public class BedingungFuerUhrzeitBeiEinemBestellschlussVon {
 	private final static int MINDESTBESTAND = 10;
 	
 	private LocalTime aktuelleUhrzeit;
-	private LocalTime bestellschluss;
+	private hotdog.system.Bestellschluss bestellschluss;
 
 	public BedingungFuerUhrzeitBeiEinemBestellschlussVon(String bestellschluss) {
-		this.bestellschluss = LocalTime.parse(bestellschluss);
+		this.bestellschluss = new hotdog.system.Bestellschluss() {
+			public LocalTime bestellschluss() { return LocalTime.parse(bestellschluss); };
+		};
 	}
 	
 	public void setAktuelleUhrzeit(String uhrzeit){
@@ -21,12 +23,10 @@ public class BedingungFuerUhrzeitBeiEinemBestellschlussVon {
 	}
 	
 	public Boolean wirdPotentiellBestellt() {
-		return new Bestellung(mindestbestand).wirdBestellt(VORHANDENE_MENGE, aktuelleUhrzeit, 
-				bestellschluss);
+		return new Bestellung(mindestbestand, bestellschluss).wirdBestellt(VORHANDENE_MENGE, aktuelleUhrzeit);
 	}
 	
 	private final static hotdog.system.Mindestbestand mindestbestand = new hotdog.system.Mindestbestand() {
 		public int mindestbestandFuer(String wochentag) { return MINDESTBESTAND; }
 	};
-
 }

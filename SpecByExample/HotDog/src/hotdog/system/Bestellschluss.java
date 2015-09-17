@@ -1,7 +1,9 @@
 package hotdog.system;
 
+import org.joda.time.LocalTime;
+
 public class Bestellschluss {
-	public String bestellschluss(){
-		return "16:00";
+	public LocalTime bestellschluss(){
+		return new LocalTime(16, 0);
 	}
 }

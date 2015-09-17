@@ -14,7 +14,7 @@ public class BedingungFuerBestellstatus {
 	private Bestellung bestellung;
 
 	public void reset() {
-		bestellung = new Bestellung(mindestbestand);
+		bestellung = new Bestellung(mindestbestand, bestellschluss);
 	}
 	
 	public void setBestellungBereitsVersandt(Boolean versandt) {
@@ -24,11 +24,14 @@ public class BedingungFuerBestellstatus {
 	}
 	
 	public Boolean wirdPotentiellBestellt() {
-		return bestellung.wirdBestellt(VORHANDENE_MENGE, AKTUELLE_UHRZEIT, BESTELLSCHLUSS);
+		return bestellung.wirdBestellt(VORHANDENE_MENGE, AKTUELLE_UHRZEIT);
 	}
 	
 	private final static hotdog.system.Mindestbestand mindestbestand = new hotdog.system.Mindestbestand() {
 		public int mindestbestandFuer(String wochentag) { return MINDESTBESTAND; }
 	};
 
+	private final static hotdog.system.Bestellschluss bestellschluss = new hotdog.system.Bestellschluss() {
+		public LocalTime bestellschluss() { return BESTELLSCHLUSS; };
+	};
 }
