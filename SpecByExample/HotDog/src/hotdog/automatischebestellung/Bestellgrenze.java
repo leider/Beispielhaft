@@ -10,10 +10,6 @@ public class Bestellgrenze {
 	}
 	
 	public int bestellgrenze() {
-		if (wochentag.equalsIgnoreCase("dienstag")) {
-			return 20;
-		}
-		return 10;
+		return hotdog.system.Bestellgrenze.bestellgrenzeFuer(wochentag);
 	}
-
 }

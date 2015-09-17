@@ -1,13 +1,11 @@
 !1 Es gibt einen Bestellschluss
-
 Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Dieser liegt an jedem Tag bei 16:00 Uhr.
 
 |Bestellschluss |
 |bestellschluss?|
 |16:00          |
 
-!1 Die Bestellgrenze ist abhängig vom Wochentag
-
+!1 Es gibt eine Bestellgrenze, die vom Wochentag abhängig ist
 Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Bestellgrenze bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
 
 |Bestellgrenze           |
@@ -16,18 +14,16 @@ Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Be
 |Dienstag |20            |
 |Freitag  |10            |
 
-!1 Unterhalb der Bestellgrenze wird bestellt
-
+!1 Nach Unterschreiten der Bestellgrenze wird bestellt
 Sind genauso viele oder weniger Hot Dogs im Bestand als die Bestellgrenze beschreibt, wird potentiell bestellt.
 
 |Bedingung fuer Bestand bei einer Bestellgrenze von|15                       |
-|menge                                           |wird potentiell bestellt?|
-|16                                              |nein                     |
-|15                                              |ja                       |
-|14                                              |ja                       |
+|menge                                             |wird potentiell bestellt?|
+|16                                                |nein                     |
+|15                                                |ja                       |
+|14                                                |ja                       |
 
 !1 Nach Bestellschluss wird niemals bestellt
-
 Nach Bestellschluss wird niemals bestellt.
 
 |Bedingung fuer Uhrzeit bei einem Bestellschluss von|18:00                    |
@@ -36,13 +32,22 @@ Nach Bestellschluss wird niemals bestellt.
 |18:00                                              |nein                     |
 |18:01                                              |nein                     |
 
-!1 Ausführung der Bestellung
+!1 Bestellstatus
 
+Wurde bereits eine Bestellung verschickt, wird nicht noch einmal bestellt.
+
+|Bedingung fuer Bestellstatus                         |
+|Bestellung bereits versandt|wird potentiell bestellt?|
+|nein                       |ja                       |
+|ja                         |nein                     |
+
+!1 Ausführung der Bestellung
 Die Bestellung wird ausgeführt, wenn sowohl die Bestellgrenze unterschritten wurde als auch der Bestellschluss noch nicht erreicht wurde.
 
-|Ausfuehrung der Bestellung                                                            |
-|Bestellgrenze ist unterschritten|Bestellschluss ist noch nicht erreicht|wird bestellt?|
-|nein                            |nein                                  |nein          |
-|ja                              |nein                                  |nein          |
-|nein                            |ja                                    |nein          |
-|ja                              |ja                                    |ja            |
+|Ausfuehrung der Bestellung                                                                                   |
+|Bestellgrenze ist unterschritten|Bestellschluss ist schon erreicht|Bestellung bereits versandt|wird bestellt?|
+|nein                            |ja                               |nein                       |nein          |
+|ja                              |ja                               |nein                       |nein          |
+|nein                            |nein                             |nein                       |nein          |
+|ja                              |nein                             |nein                       |ja            |
+|ja                              |nein                             |ja                         |nein          |

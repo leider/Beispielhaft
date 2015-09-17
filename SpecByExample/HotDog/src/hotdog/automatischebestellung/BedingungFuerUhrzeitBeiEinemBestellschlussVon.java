@@ -1,26 +1,28 @@
 package hotdog.automatischebestellung;
 
+import hotdog.system.Bestellung;
+
 import org.joda.time.LocalTime;
 
 public class BedingungFuerUhrzeitBeiEinemBestellschlussVon {
 
-	private String uhrzeit;
-	private LocalTime schluss;
+	private final static int VORHANDENE_MENGE = 1;
+	private final static int ERFORDERLICHE_MINDESTMENGE = 10;
+	
+	private LocalTime aktuelleUhrzeit;
+	private LocalTime bestellschluss;
 
-	public BedingungFuerUhrzeitBeiEinemBestellschlussVon(String schluss) {
-		this.schluss = LocalTime.parse(schluss);
+	public BedingungFuerUhrzeitBeiEinemBestellschlussVon(String bestellschluss) {
+		this.bestellschluss = LocalTime.parse(bestellschluss);
 	}
 	
 	public void setUhrzeit(String uhrzeit){
-		this.uhrzeit = uhrzeit;
+		this.aktuelleUhrzeit = LocalTime.parse(uhrzeit);
 	}
 	
-	public String wirdPotentiellBestellt() {
-		LocalTime time = LocalTime.parse(uhrzeit);
-		if (time.isBefore(schluss)) {
-			return "ja";
-		}
-		return "nein";
+	public Boolean wirdPotentiellBestellt() {
+		return new Bestellung().wirdBestellt(VORHANDENE_MENGE, ERFORDERLICHE_MINDESTMENGE, 
+				aktuelleUhrzeit, bestellschluss);
 	}
 
 }
