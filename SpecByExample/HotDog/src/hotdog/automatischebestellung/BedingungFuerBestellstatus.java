@@ -7,14 +7,14 @@ import hotdog.system.Bestellung;
 public class BedingungFuerBestellstatus {
 
 	private final static int VORHANDENE_MENGE = 1;
-	private final static int ERFORDERLICHE_MINDESTMENGE = 10;
+	private final static int MINDESTBESTAND = 10;
 	private static final LocalTime AKTUELLE_UHRZEIT = LocalTime.now();
 	private static final LocalTime BESTELLSCHLUSS = LocalTime.now().plusHours(1);
 
 	private Bestellung bestellung;
 
 	public void reset() {
-		bestellung = new Bestellung();
+		bestellung = new Bestellung(mindestbestand);
 	}
 	
 	public void setBestellungBereitsVersandt(Boolean versandt) {
@@ -24,6 +24,11 @@ public class BedingungFuerBestellstatus {
 	}
 	
 	public Boolean wirdPotentiellBestellt() {
-		return bestellung.wirdBestellt(VORHANDENE_MENGE, ERFORDERLICHE_MINDESTMENGE, AKTUELLE_UHRZEIT, BESTELLSCHLUSS);
+		return bestellung.wirdBestellt(VORHANDENE_MENGE, AKTUELLE_UHRZEIT, BESTELLSCHLUSS);
 	}
+	
+	private final static hotdog.system.Mindestbestand mindestbestand = new hotdog.system.Mindestbestand() {
+		public int mindestbestandFuer(String wochentag) { return MINDESTBESTAND; }
+	};
+
 }

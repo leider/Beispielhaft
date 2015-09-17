@@ -8,12 +8,14 @@ import org.joda.time.LocalTime;
 public class BedingungFuerBestandBeiEinemMindestbestandVon  {
 
 	private int aktuellerBestand;
-	private int mindestbestand;
+	private final hotdog.system.Mindestbestand mindestbestand;
 	private static final LocalTime AKTUELLE_UHRZEIT = LocalTime.now();
 	private static final LocalTime BESTELLSCHLUSS = LocalTime.now().plusHours(1);
 
-	public BedingungFuerBestandBeiEinemMindestbestandVon(int mindestbestand) {
-		this.mindestbestand = mindestbestand;
+	public BedingungFuerBestandBeiEinemMindestbestandVon(final int mindestbestand) {
+		this.mindestbestand = new hotdog.system.Mindestbestand() {
+			public int mindestbestandFuer(String wochentag) { return mindestbestand; }
+		};
 	}
 	
 	public void setAktuellerBestand(int aktuellerBestand){
@@ -21,7 +23,7 @@ public class BedingungFuerBestandBeiEinemMindestbestandVon  {
 	}
 	
 	public Boolean wirdPotentiellBestellt() {
-		return new Bestellung().wirdBestellt(aktuellerBestand, mindestbestand, AKTUELLE_UHRZEIT, BESTELLSCHLUSS);
+		return new Bestellung(mindestbestand).wirdBestellt(aktuellerBestand, AKTUELLE_UHRZEIT, BESTELLSCHLUSS);
 	}
 
 }
