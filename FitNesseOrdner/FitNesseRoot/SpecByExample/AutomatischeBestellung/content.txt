@@ -5,29 +5,29 @@ Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Dieser lieg
 |bestellschluss?|
 |16:00          |
 
-!1 Es gibt eine Bestellgrenze, die vom Wochentag abhängig ist
-Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt die Bestellgrenze bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
+!1 Es gibt einen Mindestbestand, der vom Wochentag abhängig ist
+Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt der Mindestbestand bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
 
-|Bestellgrenze           |
-|wochentag|bestellgrenze?|
-|Montag   |10            |
-|Dienstag |20            |
-|Freitag  |10            |
+|Mindestbestand           |
+|wochentag|mindestbestand?|
+|Montag   |10             |
+|Dienstag |20             |
+|Freitag  |10             |
 
-!1 Nach Unterschreiten der Bestellgrenze wird bestellt
-Sind genauso viele oder weniger Hot Dogs im Bestand als die Bestellgrenze beschreibt, wird potentiell bestellt.
+!1 Nach Unterschreiten des Mindestbestandes wird bestellt
+Sind genauso viele oder weniger Hot Dogs im Bestand als die Mindestbestand vorgibt, wird potentiell bestellt.
 
-|Bedingung fuer Bestand bei einer Bestellgrenze von|15                       |
-|menge                                             |wird potentiell bestellt?|
-|16                                                |nein                     |
-|15                                                |ja                       |
-|14                                                |ja                       |
+|Bedingung fuer Bestand bei einem Mindestbestand von|15                       |
+|aktueller Bestand                                  |wird potentiell bestellt?|
+|16                                                 |nein                     |
+|15                                                 |ja                       |
+|14                                                 |ja                       |
 
 !1 Nach Bestellschluss wird niemals bestellt
 Nach Bestellschluss wird niemals bestellt.
 
 |Bedingung fuer Uhrzeit bei einem Bestellschluss von|18:00                    |
-|uhrzeit                                            |wird potentiell bestellt?|
+|aktuelle Uhrzeit                                   |wird potentiell bestellt?|
 |17:59                                              |ja                       |
 |18:00                                              |nein                     |
 |18:01                                              |nein                     |
@@ -42,12 +42,12 @@ Wurde bereits eine Bestellung verschickt, wird nicht noch einmal bestellt.
 |ja                         |nein                     |
 
 !1 Ausführung der Bestellung
-Die Bestellung wird ausgeführt, wenn sowohl die Bestellgrenze unterschritten wurde als auch der Bestellschluss noch nicht erreicht wurde.
+Die Bestellung wird ausgeführt, wenn sowohl der Mindestbestand unterschritten wurde als auch der Bestellschluss noch nicht erreicht wurde.
 
-|Ausfuehrung der Bestellung                                                                                   |
-|Bestellgrenze ist unterschritten|Bestellschluss ist schon erreicht|Bestellung bereits versandt|wird bestellt?|
-|nein                            |ja                               |nein                       |nein          |
-|ja                              |ja                               |nein                       |nein          |
-|nein                            |nein                             |nein                       |nein          |
-|ja                              |nein                             |nein                       |ja            |
-|ja                              |nein                             |ja                         |nein          |
+|Ausfuehrung der Bestellung                                                                                    |
+|Mindestbestand ist unterschritten|Bestellschluss ist schon erreicht|Bestellung bereits versandt|wird bestellt?|
+|nein                             |ja                               |nein                       |nein          |
+|ja                               |ja                               |nein                       |nein          |
+|nein                             |nein                             |nein                       |nein          |
+|ja                               |nein                             |nein                       |ja            |
+|ja                               |nein                             |ja                         |nein          |

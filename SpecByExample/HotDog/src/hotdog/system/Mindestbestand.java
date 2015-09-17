@@ -1,8 +1,8 @@
 package hotdog.system;
 
-public class Bestellgrenze {
+public class Mindestbestand {
 	
-	public static int bestellgrenzeFuer(String wochentag) {
+	public int mindestbestandFuer(String wochentag) {
 		if (wochentag.equalsIgnoreCase("dienstag")) {
 			return 20;
 		}

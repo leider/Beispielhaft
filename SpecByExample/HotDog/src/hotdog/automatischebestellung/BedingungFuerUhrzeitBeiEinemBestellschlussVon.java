@@ -16,7 +16,7 @@ public class BedingungFuerUhrzeitBeiEinemBestellschlussVon {
 		this.bestellschluss = LocalTime.parse(bestellschluss);
 	}
 	
-	public void setUhrzeit(String uhrzeit){
+	public void setAktuelleUhrzeit(String uhrzeit){
 		this.aktuelleUhrzeit = LocalTime.parse(uhrzeit);
 	}
 	

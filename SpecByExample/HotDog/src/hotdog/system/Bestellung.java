@@ -5,7 +5,7 @@ import org.joda.time.LocalTime;
 public class Bestellung {
 
 	private boolean bestellungUnterwegs;
-
+	
 	public void versendeBestellung() {
 		bestellungUnterwegs = true;
 	}

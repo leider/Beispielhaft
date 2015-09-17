@@ -1,7 +1,7 @@
 package hotdog.automatischebestellung;
 
 
-public class Bestellgrenze {
+public class Mindestbestand {
 	
 	private String wochentag;
 	
@@ -9,7 +9,7 @@ public class Bestellgrenze {
 		this.wochentag = wochentag;
 	}
 	
-	public int bestellgrenze() {
-		return hotdog.system.Bestellgrenze.bestellgrenzeFuer(wochentag);
+	public int mindestbestand() {
+		return new hotdog.system.Mindestbestand().mindestbestandFuer(wochentag);
 	}
 }

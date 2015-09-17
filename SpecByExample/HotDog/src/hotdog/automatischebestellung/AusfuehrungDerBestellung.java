@@ -6,7 +6,7 @@ import org.joda.time.LocalTime;
 
 public class AusfuehrungDerBestellung {
 
-	private final static int ERFORDERLICHE_MINDESTMENGE = 10;
+	private final static int MINDESTBESTAND = 10;
 	private static final LocalTime BESTELLSCHLUSS = LocalTime.now();
 
 	private int vorhandeneMenge;
@@ -17,11 +17,11 @@ public class AusfuehrungDerBestellung {
 		bestellung = new Bestellung();
 	}
 	
-	public void setBestellgrenzeIstUnterschritten(Boolean bestellgrenzeUnterschritten){
-		if(bestellgrenzeUnterschritten){
-			vorhandeneMenge = ERFORDERLICHE_MINDESTMENGE - 5;
+	public void setMindestbestandIstUnterschritten(Boolean mindestbestandUnterschritten){
+		if(mindestbestandUnterschritten){
+			vorhandeneMenge = MINDESTBESTAND - 5;
 		} else {
-			vorhandeneMenge = ERFORDERLICHE_MINDESTMENGE + 5;
+			vorhandeneMenge = MINDESTBESTAND + 5;
 		}
 	}
 	
@@ -40,6 +40,6 @@ public class AusfuehrungDerBestellung {
 	}
 	
 	public Boolean wirdBestellt(){
-		return bestellung.wirdBestellt(vorhandeneMenge, ERFORDERLICHE_MINDESTMENGE, aktuelleUhrzeit, BESTELLSCHLUSS);
+		return bestellung.wirdBestellt(vorhandeneMenge, MINDESTBESTAND, aktuelleUhrzeit, BESTELLSCHLUSS);
 	}
 }
