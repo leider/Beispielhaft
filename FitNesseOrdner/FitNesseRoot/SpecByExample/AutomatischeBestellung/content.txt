@@ -47,7 +47,10 @@ Wurde bereits eine Bestellung verschickt, wird nicht noch einmal bestellt.
 
 !1 Ausführung der Bestellung
 
-Die Bestellung wird ausgeführt, wenn sowohl der Mindestbestand unterschritten wurde als auch der Bestellschluss noch nicht erreicht wurde.
+Die Bestellung wird ausgeführt, wenn
+ * der Mindestbestand unterschritten wurde
+ * der Bestellschluss noch nicht erreicht wurde
+ * die Bestellung noch nicht versandt wurde.
 
 |Ausfuehrung der Bestellung                                                                                    |
 |Mindestbestand ist unterschritten|Bestellschluss ist schon erreicht|Bestellung bereits versandt|wird bestellt?|
