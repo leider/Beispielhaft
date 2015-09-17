@@ -40,7 +40,7 @@ public class AusfuehrungDerBestellung {
 	}
 	
 	public Boolean wirdBestellt(){
-		return bestellung.wirdBestellt(vorhandeneMenge, aktuelleUhrzeit);
+		return bestellung.wirdBestellt(vorhandeneMenge, aktuelleUhrzeit, "montag");
 	}
 	
 	private final static hotdog.system.Mindestbestand mindestbestand = new hotdog.system.Mindestbestand() {

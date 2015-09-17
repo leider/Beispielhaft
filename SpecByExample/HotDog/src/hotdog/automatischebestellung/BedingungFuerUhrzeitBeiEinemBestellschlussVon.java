@@ -23,7 +23,7 @@ public class BedingungFuerUhrzeitBeiEinemBestellschlussVon {
 	}
 	
 	public Boolean wirdPotentiellBestellt() {
-		return new Bestellung(mindestbestand, bestellschluss).wirdBestellt(VORHANDENE_MENGE, aktuelleUhrzeit);
+		return new Bestellung(mindestbestand, bestellschluss).wirdBestellt(VORHANDENE_MENGE, aktuelleUhrzeit, "montag");
 	}
 	
 	private final static hotdog.system.Mindestbestand mindestbestand = new hotdog.system.Mindestbestand() {

@@ -17,8 +17,8 @@ public class Bestellung {
 		bestellungUnterwegs = true;
 	}
 	
-	public boolean wirdBestellt(int vorhandeneMenge, LocalTime time) {
-		return time.isBefore(bestellschluss.bestellschluss()) && vorhandeneMenge <= mindestbestand.mindestbestandFuer("montag") && !bestellungUnterwegs;
+	public boolean wirdBestellt(int vorhandeneMenge, LocalTime time, String wochentag) {
+		return time.isBefore(bestellschluss.bestellschluss()) && vorhandeneMenge <= mindestbestand.mindestbestandFuer(wochentag) && !bestellungUnterwegs;
 	}
 
 }

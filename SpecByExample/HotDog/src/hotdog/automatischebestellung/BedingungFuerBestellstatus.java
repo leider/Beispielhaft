@@ -24,7 +24,7 @@ public class BedingungFuerBestellstatus {
 	}
 	
 	public Boolean wirdPotentiellBestellt() {
-		return bestellung.wirdBestellt(VORHANDENE_MENGE, AKTUELLE_UHRZEIT);
+		return bestellung.wirdBestellt(VORHANDENE_MENGE, AKTUELLE_UHRZEIT, "montag");
 	}
 	
 	private final static hotdog.system.Mindestbestand mindestbestand = new hotdog.system.Mindestbestand() {
