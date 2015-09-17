@@ -1,11 +1,13 @@
 !1 Es gibt einen Bestellschluss
-Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Dieser liegt an jedem Tag bei 16:00 Uhr.
+
+Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Der Bestellschluss liegt an jedem Tag bei 16:00 Uhr.
 
 |Bestellschluss |
 |bestellschluss?|
 |16:00          |
 
 !1 Es gibt einen Mindestbestand, der vom Wochentag abhängig ist
+
 Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt der Mindestbestand bei 20, um dem üblicherweise höheren Umsatz gerecht zu werden.
 
 |Mindestbestand           |
@@ -15,7 +17,8 @@ Normalerweise wird bei einem Bestand von 10 bestellt. An Dienstagen liegt der Mi
 |Freitag  |10             |
 
 !1 Nach Unterschreiten des Mindestbestandes wird bestellt
-Sind genauso viele oder weniger Hot Dogs im Bestand als die Mindestbestand vorgibt, wird potentiell bestellt.
+
+Sind genauso viele oder weniger Hot Dogs im Bestand als der Mindestbestand vorgibt, wird potentiell bestellt.
 
 |Bedingung fuer Bestand bei einem Mindestbestand von|15                       |
 |aktueller Bestand                                  |wird potentiell bestellt?|
@@ -24,6 +27,7 @@ Sind genauso viele oder weniger Hot Dogs im Bestand als die Mindestbestand vorgi
 |14                                                 |ja                       |
 
 !1 Nach Bestellschluss wird niemals bestellt
+
 Nach Bestellschluss wird niemals bestellt.
 
 |Bedingung fuer Uhrzeit bei einem Bestellschluss von|18:00                    |
@@ -42,6 +46,7 @@ Wurde bereits eine Bestellung verschickt, wird nicht noch einmal bestellt.
 |ja                         |nein                     |
 
 !1 Ausführung der Bestellung
+
 Die Bestellung wird ausgeführt, wenn sowohl der Mindestbestand unterschritten wurde als auch der Bestellschluss noch nicht erreicht wurde.
 
 |Ausfuehrung der Bestellung                                                                                    |
